@@ -57,7 +57,6 @@ function Buttons(): React.JSX.Element {
         {authState != null ? authState?.authTokens?.accessToken : 'there'}
       </Text>
       <Button title="Login request" onPress={loginRequest}></Button>
-      <Button title="Reauth request" onPress={authorizedRequest}></Button>
       <Button title="Authorized request" onPress={authorizedRequest}></Button>
       <Button title="Break accesstoken" onPress={breakAccessToken}></Button>
       <Button title="Break refreshToken" onPress={breakRefreshToken}></Button>
